@@ -1,0 +1,30 @@
+{
+  "name": "ts-cli-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "NODE_OPTIONS=\"--loader ts-node/esm\" node index.mts",
+    "build": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format-check": "prettier --check .",
+    "lint": "eslint .",
+    "test": "NODE_OPTIONS=\"--loader ts-node/esm\" node test.mts",
+    "all": "yarn run build && yarn run format && yarn run lint && yarn test",
+    "dependency-upgrade": "yarn upgrade && yarn run all"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "18",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "prettier": "^2.7.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
