@@ -1,25 +1,35 @@
-import { argv } from "process";
+import { buildSpreadsheet, spreadsheetInput } from "kalkulationsbogen";
+import { writeFile } from "node:fs/promises";
 
-interface programOptions {
-  version: boolean;
-}
+const spreadsheet: spreadsheetInput = [
+  ["String", "Float", "Date", "Time", "Currency", "Percentage"],
+  [
+    {
+      value: "ABBA",
+      valueType: "string",
+    },
+    {
+      value: "42.3324",
+      valueType: "float",
+    },
+    {
+      value: "2022-02-02",
+      valueType: "date",
+    },
+    {
+      value: "19:03:00",
+      valueType: "time",
+    },
+    {
+      value: "2.22",
+      valueType: "currency",
+    },
+    {
+      value: "0.4223",
+      valueType: "percentage",
+    },
+  ],
+];
 
-export function parseArgs(args: string[]) {
-  const version = args.includes("--version");
-
-  return {
-    version: version,
-  };
-}
-
-argv
-  .filter((v, i) => i > 1)
-  .forEach((val, index) => {
-    console.log(`${index}: ${val}`);
-  });
-
-const opts = parseArgs(argv.filter((v, i) => i > 1));
-
-if (opts.version) {
-  console.log("v 1.0.0");
-}
+const mySpreadsheet = await buildSpreadsheet(spreadsheet);
+await writeFile("mySpreadsheet.fods", mySpreadsheet);
