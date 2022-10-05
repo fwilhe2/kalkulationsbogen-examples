@@ -668,10 +668,10 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
 
-kalkulationsbogen@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/kalkulationsbogen/-/kalkulationsbogen-0.0.4.tgz#701bb98e73569cfc889ae3da56b54bab5ea74544"
-  integrity sha512-SucVLPCl9Od/HDSDhBxJED72/rKocSnB4yRbDgGrrhljvZtdk4c/Xrvw4VeQt+7L7oXn8eAIKk9i93uMxudF+w==
+kalkulationsbogen@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/kalkulationsbogen/-/kalkulationsbogen-0.0.5.tgz#df5a29c53a3225fb65137d3d870b992f86f48baa"
+  integrity sha512-dBIrJgjkoU4M2g94g4U3GxouXKvI6TJNoKhViXe6+K91hRgYOVPSOP8O08MP9py3p4LGpCvGgAOIlusR5hybIw==
 
 levn@^0.4.1:
   version "0.4.1"
