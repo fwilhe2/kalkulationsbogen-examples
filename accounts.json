@@ -1,0 +1,62 @@
+[
+    [
+        "",
+        "2020",
+        "2021",
+        "2022"
+    ],
+    [
+        "Acc 1",
+        {
+            "value": "2.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2020"
+        },
+        {
+            "value": "3.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2021"
+        },
+        {
+            "value": "4.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2022"
+        }
+    ],
+    [
+        "Acc 2",
+        {
+            "value": "5.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2020"
+        },
+        {
+            "value": "6.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2021"
+        },
+        {
+            "value": "9.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2022"
+        }
+    ],
+    [
+        "Acc 3",
+        {
+            "value": "12.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2020"
+        },
+        {
+            "value": "13.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2021"
+        },
+        {
+            "value": "14.22",
+            "valueType": "currency",
+            "rangeName": "YEAR2022"
+        }
+    ]
+]

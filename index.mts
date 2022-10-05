@@ -1,5 +1,5 @@
 import { buildSpreadsheet, spreadsheetInput } from "kalkulationsbogen";
-import { writeFile } from "node:fs/promises";
+import { writeFile, readFile } from "node:fs/promises";
 
 const spreadsheet: spreadsheetInput = [
   ["String", "Float", "Date", "Time", "Currency", "Percentage"],
@@ -33,3 +33,9 @@ const spreadsheet: spreadsheetInput = [
 
 const mySpreadsheet = await buildSpreadsheet(spreadsheet);
 await writeFile("mySpreadsheet.fods", mySpreadsheet);
+
+
+const accounts: spreadsheetInput = JSON.parse((await readFile('accounts.json')).toString())
+const sumRow = accounts[0].slice(1).map(year =>  { return {functionName: "SUM", arguments: `YEAR${year}`}})
+const accountsSpreadsheet = await buildSpreadsheet(accounts.concat([['Sum', ...sumRow]]));
+await writeFile("accountsSpreadsheet.fods", accountsSpreadsheet);
