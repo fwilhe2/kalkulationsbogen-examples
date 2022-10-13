@@ -14,3 +14,10 @@ jobs:
           yarn
       - run: |
           yarn run all
+      - uses: actions/upload-artifact@v3
+        with:
+          name: sample-spreadsheets
+          path: |
+            *.fods
+            *.ods
+            *.xlsx

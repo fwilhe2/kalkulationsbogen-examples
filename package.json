@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint .",
-    "all": "yarn run build && yarn run format && yarn run lint",
+    "all": "yarn run build && yarn run format && yarn run lint && yarn run accounts && yarn run convert",
     "dependency-upgrade": "yarn upgrade && yarn run all",
     "convert": "NODE_OPTIONS=\"--loader ts-node/esm\" node convert.mts"
   },
