@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "NODE_OPTIONS=\"--loader ts-node/esm\" node index.mts",
+    "accounts": "NODE_OPTIONS=\"--loader ts-node/esm\" node accounts/index.mts",
     "build": "tsc --noEmit",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint .",
-    "test": "NODE_OPTIONS=\"--loader ts-node/esm\" node test.mts",
-    "all": "yarn run build && yarn run format && yarn run lint && yarn test",
-    "dependency-upgrade": "yarn upgrade && yarn run all"
+    "all": "yarn run build && yarn run format && yarn run lint",
+    "dependency-upgrade": "yarn upgrade && yarn run all",
+    "convert": "NODE_OPTIONS=\"--loader ts-node/esm\" node convert.mts"
   },
   "dependencies": {
     "kalkulationsbogen": "^0.0.5",
