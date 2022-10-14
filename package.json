@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "accounts": "NODE_OPTIONS=\"--loader ts-node/esm\" node accounts/index.mts",
+    "performance": "NODE_OPTIONS=\"--loader ts-node/esm\" node performance-model/index.mts",
     "build": "tsc --noEmit",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint .",
-    "all": "yarn run build && yarn run format && yarn run lint && yarn run accounts && yarn run convert",
+    "all": "yarn run build && yarn run format && yarn run lint && yarn run accounts && yarn run performance && yarn run convert",
     "dependency-upgrade": "yarn upgrade && yarn run all",
     "convert": "NODE_OPTIONS=\"--loader ts-node/esm\" node convert.mts"
   },

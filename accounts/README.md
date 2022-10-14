@@ -12,5 +12,5 @@ The data in this example has the following format:
 
 See [`accounts.json`](./accounts.json) for the actual example data.
 
-The generated spreadsheet contains the input data and additonally a sum and a diff row.
+The generated spreadsheet contains the input data and additionally a sum and a diff row.
 Sum and diff are not calculated in the js code, but are written as spreadsheet formula, so the spreadsheet software will calculate it on opening the file.
