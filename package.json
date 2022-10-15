@@ -6,6 +6,7 @@
   "scripts": {
     "accounts": "NODE_OPTIONS=\"--loader ts-node/esm\" node accounts/index.mts",
     "performance": "NODE_OPTIONS=\"--loader ts-node/esm\" node performance-model/index.mts",
+    "formula": "NODE_OPTIONS=\"--loader ts-node/esm\" node formula-dsl/index.mts",
     "build": "tsc --noEmit",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
