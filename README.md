@@ -14,6 +14,9 @@ Run this example with `yarn run accounts`.
 [Performance Model](./performance-model/) is an example for calculations based on absolute and relative cell references using named ranges.
 Run this example with `yarn run performance`.
 
+[CLI](./cli/) is an example for creating a cli tool to convert json data into a spreadsheet file.
+Run this example with `yarn run cli -i cli/grades.json`.
+
 ## Converting Flat ODS to other formats
 
 With a local install of LibreOffice or using [VSCode dev containers](https://code.visualstudio.com/docs/remote/containers) you can convert the `fods` files to `ods` and `xslx` files which are compatible with more spreadsheet programs.

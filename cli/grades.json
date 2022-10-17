@@ -1,0 +1,27 @@
+[
+    [
+        "Max",
+        {
+            "value": "3.0",
+            "valueType": "float",
+            "rangeName": "grades"
+        }
+    ],
+    [
+        "Steffi",
+        {
+            "value": "2.3",
+            "valueType": "float",
+            "rangeName": "grades"
+        }
+    ],
+    [
+        "Michi",
+        {
+            "value": "1.5",
+            "valueType": "float",
+            "rangeName": "grades"
+        }
+    ]
+
+]
