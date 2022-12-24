@@ -13,7 +13,7 @@ const sumRow = years.map((year) => {
   return {
     functionName: "SUM",
     arguments: `YEAR${year}`,
-    rangeName: `SUM${year}`,
+    range: `SUM${year}`,
   };
 });
 

@@ -6,15 +6,15 @@ const mySpreadsheet: spreadsheetInput = [
     // The first row contains data which the calculations depend on.
     // Those values can be changed in the spreadsheet and the calculated values will be updated accordingly.
     "Problem Size X",
-    { rangeName: "problemSizeX", value: "100", valueType: "float" },
+    { range: "problemSizeX", value: "100", valueType: "float" },
     "Problem Size Y",
-    { rangeName: "problemSizeY", value: "100", valueType: "float" },
+    { range: "problemSizeY", value: "100", valueType: "float" },
     "Compute Time per Cell",
-    { rangeName: "calculationTimePerCell", value: "10", valueType: "float" },
+    { range: "calculationTimePerCell", value: "10", valueType: "float" },
     "Number of Ops",
-    { rangeName: "numberOfOperations", value: "1", valueType: "float" },
+    { range: "numberOfOperations", value: "1", valueType: "float" },
     "Communication Time per Cell",
-    { rangeName: "communicationTimePerCell", value: "200", valueType: "float" },
+    { range: "communicationTimePerCell", value: "200", valueType: "float" },
   ],
   [
     "Number of CPUs",
@@ -27,29 +27,29 @@ const mySpreadsheet: spreadsheetInput = [
 for (let numberOfCpus = 1; numberOfCpus < 25; numberOfCpus++) {
   mySpreadsheet.push([
     {
-      rangeName: "numberOfCpus",
+      range: "numberOfCpus",
       value: numberOfCpus.toString(),
       valueType: "float",
     },
     {
-      rangeName: "timeParallel",
+      range: "timeParallel",
       functionName: "",
       arguments:
         "(problemSizeX/numberOfCpus)*problemSizeY*calculationTimePerCell*numberOfOperations+communicationTimePerCell*numberOfCpus",
     },
     {
-      rangeName: "timeSequential",
+      range: "timeSequential",
       functionName: "",
       arguments:
         "problemSizeX*problemSizeY*calculationTimePerCell*numberOfOperations",
     },
     {
-      rangeName: "speedup",
+      range: "speedup",
       functionName: "",
       arguments: "timeSequential/timeParallel",
     },
     {
-      rangeName: "efficiency",
+      range: "efficiency",
       functionName: "",
       arguments: "speedup/numberOfCpus",
     },
